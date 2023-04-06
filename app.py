@@ -1,11 +1,14 @@
 from flask import Flask, render_template
 from markupsafe import escape
 from flask import url_for
+# from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
 
+# db = SQLAlchemy(app) # 初始化扩展
 
-name = 'Grey Li'
+
+name = 'Gert Tung'
 movies = [
     {'title': 'My Neighbor Totoro', 'year': '1988'},
     {'title': 'Dead Poets Society', 'year': '1989'},
